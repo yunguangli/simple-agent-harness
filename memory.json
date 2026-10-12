@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "text": "The user's favorite editor is Neovim.",
+    "tags": [
+      "preference",
+      "editor"
+    ],
+    "created": "2026-10-12T15:42:16+08:00"
+  },
+  {
+    "id": 2,
+    "text": "This project is a learning exercise.",
+    "tags": [
+      "project",
+      "learning"
+    ],
+    "created": "2026-10-12T15:42:17+08:00"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "servers": [
+    {
+      "name": "calc",
+      "command": "python",
+      "args": ["servers/calc_server.py"]
+    },
+    {
+      "name": "notes",
+      "command": "python",
+      "args": ["servers/notes_server.py"]
+    }
+  ]
+}

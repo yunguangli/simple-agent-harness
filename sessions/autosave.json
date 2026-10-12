@@ -1,0 +1,52 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant working on the user's computer.\n\nReport only what the latest tool calls and messages actually did. Never\ndescribe actions you did not take this turn.\n\nWhen tools are available, use them to look things up instead of guessing."
+  },
+  {
+    "role": "user",
+    "content": "remember that my favorite editor is Neovim and that this project is a learning exercise"
+  },
+  {
+    "role": "assistant",
+    "content": "I'll save those facts for you using the memory system.",
+    "tool_calls": [
+      {
+        "type": "function",
+        "index": 0,
+        "id": "chatcmpl-tool-02ac7ce623ea4b4cb7ce07a6fff403d7",
+        "function": {
+          "name": "save_memory",
+          "arguments": "{\"text\": \"The user's favorite editor is Neovim.\", \"tags\": \"preference,editor\"}"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "chatcmpl-tool-02ac7ce623ea4b4cb7ce07a6fff403d7",
+    "name": "save_memory",
+    "content": "Saved memory #1. It will be in your prompt from the next session on."
+  },
+  {
+    "role": "assistant",
+    "content": "Now let me also save the information about the project being a learning exercise.",
+    "tool_calls": [
+      {
+        "type": "function",
+        "index": 0,
+        "id": "save_memory_hszda7zjxw36",
+        "function": {
+          "name": "save_memory",
+          "arguments": "{\"text\": \"This project is a learning exercise.\", \"tags\": \"project,learning\"}"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "save_memory_hszda7zjxw36",
+    "name": "save_memory",
+    "content": "Saved memory #2. It will be in your prompt from the next session on."
+  }
+]
